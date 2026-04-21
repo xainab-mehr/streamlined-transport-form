@@ -182,25 +182,24 @@ body {
 /* Header */
 .bf-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  background: white;
-  border-radius: 12px;
-  padding: 16px 24px;
+  margin-bottom: 12px;
+  padding: 24px 24px 16px;
 }
 
 .bf-header-logo {
-  max-width: 180px;
+  max-width: 240px;
   height: auto;
+  margin-bottom: 8px;
 }
 
 .bf-header-right {
-  text-align: right;
+  text-align: center;
 }
 
 .bf-header-title {
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #2f5072;
   line-height: 1.4;
@@ -209,7 +208,7 @@ body {
 .bf-progress-label {
   font-size: 0.75rem;
   color: #8892a0;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* Progress dots */
@@ -285,9 +284,13 @@ body {
   transition: all 0.3s ease;
 }
 
-.bf-step-card.active .bf-step-card-inner {
-  border-color: #3b6fb5;
+.bf-step-card.active {
+  border: 2px solid #3b6fb5;
   box-shadow: 0 2px 12px rgba(59, 111, 181, 0.12);
+}
+
+.bf-step-card.active .bf-step-card-inner {
+  border-color: transparent;
 }
 
 .bf-step-card.completed .bf-step-card-inner {
