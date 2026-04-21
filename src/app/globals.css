@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f0f0f0;
+  background: white;
   min-height: 100vh;
   color: #1a2a44;
 }
@@ -22,7 +22,7 @@ body {
    ═══════════════════════════════════════════ */
 
 .otp-container {
-  background: white;
+  background: #f4f4f4;
   padding: 2.5rem 2.5rem 2rem;
   border-radius: 16px;
   max-width: 440px;
