@@ -145,6 +145,7 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
             key={stepDef.key}
             className={`bf-step-card ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}`}
           >
+           <div className="bf-step-card-inner">
             {/* Step header */}
             <div className="bf-step-header" onClick={() => isCompleted ? setCurrentStep(i) : undefined}>
               <div className={`bf-step-number ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}>
@@ -360,6 +361,7 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
                 <span>Complete previous steps first</span>
               </div>
             )}
+           </div>
           </div>
         );
       })}

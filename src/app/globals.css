@@ -269,28 +269,38 @@ body {
 
 /* ── Step cards ── */
 .bf-step-card {
-  border: 2px solid transparent;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
   margin-bottom: 16px;
-  background: white;
+  background: #f4f4f4;
+  padding: 10px;
   transition: all 0.3s ease;
 }
 
-.bf-step-card.active {
+.bf-step-card-inner {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.bf-step-card.active .bf-step-card-inner {
   border-color: #3b6fb5;
   box-shadow: 0 2px 12px rgba(59, 111, 181, 0.12);
 }
 
-.bf-step-card.completed {
-  background: white;
+.bf-step-card.completed .bf-step-card-inner {
   border-color: #dde0e5;
   cursor: pointer;
 }
 
 .bf-step-card.locked {
-  background: #f3f4f6;
   opacity: 0.6;
+}
+
+.bf-step-card.locked .bf-step-card-inner {
+  background: #f9f9f9;
 }
 
 /* Step header */
