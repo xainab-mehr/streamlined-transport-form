@@ -145,8 +145,7 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
             key={stepDef.key}
             className={`bf-step-card ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}`}
           >
-           <div className="bf-step-card-inner">
-            {/* Step header */}
+            {/* Step header — on the outer gray container */}
             <div className="bf-step-header" onClick={() => isCompleted ? setCurrentStep(i) : undefined}>
               <div className={`bf-step-number ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`}>
                 {isCompleted ? '✓' : i + 1}
@@ -159,8 +158,9 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
               </div>
             </div>
 
-            {/* Step content — only show if active */}
+            {/* Step content — inside the white inner card */}
             {isActive && (
+              <div className="bf-step-card-inner">
               <div className="bf-step-content">
                 {/* Step 0: Your Quote */}
                 {i === 0 && (
@@ -352,6 +352,7 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
                   </div>
                 )}
               </div>
+              </div>
             )}
 
             {/* Locked overlay */}
@@ -361,7 +362,6 @@ export default function BookingForm({ bookingData, sessionToken, bookingToken, o
                 <span>Complete previous steps first</span>
               </div>
             )}
-           </div>
           </div>
         );
       })}
