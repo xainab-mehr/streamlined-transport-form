@@ -189,9 +189,9 @@ body {
 }
 
 .bf-header-logo {
-  max-width: 240px;
+  max-width: 300px;
   height: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .bf-header-right {
@@ -199,14 +199,14 @@ body {
 }
 
 .bf-header-title {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #2f5072;
   line-height: 1.4;
 }
 
 .bf-progress-label {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #8892a0;
   margin-top: 4px;
 }
@@ -272,7 +272,7 @@ body {
   overflow: hidden;
   margin-bottom: 16px;
   background: #f4f4f4;
-  padding: 10px;
+  padding: 16px;
   transition: all 0.3s ease;
 }
 
@@ -527,7 +527,7 @@ body {
 }
 
 .bf-clinic-card {
-  background: #f4f4f4;
+  background: linear-gradient(135deg, #f4f4f4, #c2d3e5);
   border: 1px solid #e2e4e9;
   border-radius: 6px;
   padding: 14px 16px;
